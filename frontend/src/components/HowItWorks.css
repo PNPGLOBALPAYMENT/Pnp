@@ -1,0 +1,85 @@
+.how-it-works {
+  padding: 80px 0;
+  background: rgba(255, 255, 255, 0.02);
+  color: var(--text-light);
+}
+
+.how-it-works h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 60px;
+  font-weight: 700;
+}
+
+.steps-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.step {
+  text-align: center;
+  position: relative;
+  padding: 30px 20px;
+}
+
+.step-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: var(--primary-color);
+  color: var(--dark-color);
+  border-radius: 50%;
+  font-weight: 700;
+  margin: 0 auto 15px;
+  font-size: 24px;
+}
+
+.step-icon {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.step h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: var(--text-light);
+}
+
+.step p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+}
+
+.step-connector {
+  position: absolute;
+  bottom: -40px;
+  right: -20px;
+  font-size: 24px;
+  color: var(--primary-color);
+  opacity: 0.5;
+}
+
+.step:last-child .step-connector {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .how-it-works h2 {
+    font-size: 28px;
+  }
+
+  .steps-container {
+    grid-template-columns: 1fr;
+  }
+
+  .step-connector {
+    bottom: -20px;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg);
+  }
+}

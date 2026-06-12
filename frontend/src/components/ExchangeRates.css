@@ -1,0 +1,157 @@
+.exchange-rates {
+  padding: 80px 0;
+  color: var(--text-light);
+}
+
+.exchange-rates h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 60px;
+  font-weight: 700;
+}
+
+.converter-card {
+  background: linear-gradient(135deg, rgba(244, 196, 48, 0.1) 0%, rgba(244, 196, 48, 0.05) 100%);
+  border: 1px solid rgba(244, 196, 48, 0.2);
+  padding: 40px;
+  border-radius: 12px;
+  margin-bottom: 60px;
+}
+
+.converter-card h3 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.converter-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  align-items: flex-end;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.form-group input,
+.form-group select {
+  background: rgba(15, 31, 63, 0.5);
+  border: 1px solid var(--primary-color);
+  color: var(--text-light);
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.form-group input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.btn-convert {
+  padding: 12px 30px;
+}
+
+.conversion-result {
+  margin-top: 20px;
+  text-align: center;
+  padding: 20px;
+  background: rgba(76, 175, 80, 0.1);
+  border: 1px solid rgba(76, 175, 80, 0.3);
+  border-radius: 6px;
+}
+
+.conversion-result p {
+  font-size: 18px;
+  margin: 0;
+}
+
+.conversion-result strong {
+  color: var(--primary-color);
+  font-size: 20px;
+}
+
+.rates-display {
+  margin-top: 60px;
+}
+
+.rates-display h3 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.rates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.rate-column {
+  background: linear-gradient(135deg, rgba(20, 40, 70, 0.8) 0%, rgba(15, 31, 63, 0.9) 100%);
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid rgba(244, 196, 48, 0.1);
+}
+
+.rate-column h4 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  font-size: 18px;
+}
+
+.rate-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(244, 196, 48, 0.1);
+}
+
+.rate-item:last-child {
+  border-bottom: none;
+}
+
+.rate-pair {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+}
+
+.rate-value {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  color: var(--primary-color);
+  font-size: 18px;
+}
+
+.error-message {
+  text-align: center;
+  padding: 20px;
+  background: rgba(244, 67, 54, 0.1);
+  border: 1px solid var(--error-color);
+  color: var(--error-color);
+  border-radius: 6px;
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .converter-form {
+    grid-template-columns: 1fr;
+  }
+
+  .rates-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,15 @@
+.App {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0F1F3F 0%, #1a2a4a 100%);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
